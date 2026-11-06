@@ -1,0 +1,148 @@
+/* ============================================
+   CSS DESIGN TOKENS & VARIABLES
+   JB Lobrico — Developer Portfolio
+   ============================================ */
+
+:root {
+  /* ── Colors: Dark Theme (default) ── */
+  --bg-primary: #0d1117;
+  --bg-secondary: #161b22;
+  --bg-tertiary: #21262d;
+  --bg-card: #161b22;
+  --bg-card-hover: #1c2129;
+
+  --border-primary: #30363d;
+  --border-subtle: #21262d;
+  --border-accent: rgba(56, 189, 248, 0.3);
+
+  --text-primary: #e6edf3;
+  --text-secondary: #8b949e;
+  --text-tertiary: #6e7681;
+  --text-inverse: #0d1117;
+
+  --accent-primary: #38bdf8;
+  --accent-secondary: #818cf8;
+  --accent-tertiary: #34d399;
+  --accent-warning: #fbbf24;
+  --accent-danger: #f87171;
+
+  --accent-primary-muted: rgba(56, 189, 248, 0.08);
+  --accent-secondary-muted: rgba(129, 140, 248, 0.08);
+  --accent-tertiary-muted: rgba(52, 211, 153, 0.08);
+
+  --gradient-hero: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #0d1117 100%);
+  --gradient-accent: linear-gradient(135deg, #38bdf8, #818cf8);
+  --gradient-card: linear-gradient(135deg, rgba(56,189,248,0.04), rgba(129,140,248,0.04));
+
+  /* ── Colors: Syntax Highlight ── */
+  --syntax-keyword: #ff7b72;
+  --syntax-string: #a5d6ff;
+  --syntax-variable: #ffa657;
+  --syntax-comment: #6e7681;
+  --syntax-number: #79c0ff;
+
+  /* ── Typography ── */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+
+  /* ── Spacing ── */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* ── Layout ── */
+  --container-max: 1200px;
+  --container-padding: 1.5rem;
+  --navbar-height: 64px;
+  --section-padding: 6rem 0;
+
+  /* ── Borders ── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* ── Shadows ── */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-accent: 0 0 20px rgba(56, 189, 248, 0.15);
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* ── Z-index ── */
+  --z-navbar: 100;
+  --z-modal: 200;
+  --z-tooltip: 300;
+}
+
+/* ── Light Theme Overrides ── */
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f6f8fa;
+  --bg-tertiary: #eaeef2;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f6f8fa;
+
+  --border-primary: #d0d7de;
+  --border-subtle: #eaeef2;
+  --border-accent: rgba(56, 139, 253, 0.3);
+
+  --text-primary: #1f2328;
+  --text-secondary: #57606a;
+  --text-tertiary: #6e7781;
+  --text-inverse: #ffffff;
+
+  --accent-primary: #0969da;
+  --accent-secondary: #6e40c9;
+  --accent-tertiary: #1a7f37;
+
+  --accent-primary-muted: rgba(9, 105, 218, 0.08);
+  --accent-secondary-muted: rgba(110, 64, 201, 0.08);
+  --accent-tertiary-muted: rgba(26, 127, 55, 0.08);
+
+  --gradient-hero: linear-gradient(135deg, #ffffff 0%, #f6f8fa 50%, #ffffff 100%);
+  --gradient-card: linear-gradient(135deg, rgba(9,105,218,0.03), rgba(110,64,201,0.03));
+
+  --syntax-keyword: #cf222e;
+  --syntax-string: #0a3069;
+  --syntax-variable: #953800;
+  --syntax-comment: #6e7781;
+  --syntax-number: #0550ae;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --shadow-accent: 0 0 20px rgba(9, 105, 218, 0.1);
+}
